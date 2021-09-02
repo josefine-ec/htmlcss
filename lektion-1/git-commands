@@ -1,0 +1,11 @@
+# skapa ny local git repository - vid nytt projekt
+git init
+
+# lätt till github remote repository för lagring i molnet, en gång per projekt
+git remote add origin https://github.com/josefine-ec/htmlcss.git
+
+# lägg till nya/ändrade filer till local git repository, varje gång man gjort ändringar
+git add .
+
+# spara alla ändringar till local git repository, efter varje ändring
+git commit -m "lektion-1"
