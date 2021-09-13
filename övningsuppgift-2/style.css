@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
+    font-size: 18px;
 }
 
 body {
@@ -16,17 +17,20 @@ body {
 
 h1 {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 60pt;
+    font-size: 60px;
+    line-height: 70px;
 }
 
 h2 {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 40pt;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 h3 {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 22pt;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 a {
@@ -94,19 +98,23 @@ a:hover {
 
 .showcase {
     background-color: #dedede;
-    border: 1px solid black;
 }
 
 .showcase .container {
     display: grid;
+    grid-template-columns: 530px 1fr;
+    justify-content: space-between;
     align-items: center;
-    grid-template-columns: 50% 50%;
     margin: auto;
     color:#646464;
 }
 
+.showcase .container .woman {
+    margin-left: -45px;
+}
+
 .showcase .container .showcase-text {
-    width: 850px;
+    margin-left: 200px;
 }
 
 .btn-about {
@@ -119,4 +127,24 @@ a:hover {
     font-size: 14px;
     font-weight: 600;
     margin-top: 50px;
+}
+
+.abt-us .container {
+    display: grid;
+    grid-template-columns: 1fr 473px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    color:#646464;
+}
+
+.abt-us .container .abt-text {
+    display: grid;
+    color:#646464;
+}
+
+.clinic {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    color: #2baaec;
 }
