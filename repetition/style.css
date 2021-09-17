@@ -13,7 +13,7 @@
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    color: #39314f;
+    color: #4f3131;
 }
 
 .container {
@@ -35,18 +35,19 @@
 
 /* header section */
 .header-section {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(238, 253, 255) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(255, 242, 238) 100%);
     height: 100vh;
 }
 
 /* header section / navbar */
 
 #navbar {
-    background: rgba(238, 253, 255, 0.5);
+    background: rgba(255, 242, 238, 0.95);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #navbar .nav {
