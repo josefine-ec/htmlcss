@@ -1,0 +1,26 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// colors
+$dark: #252525;
+$light: #ffffff;
+$pink: #EE307A;
+$orange: #FC8B53;
+$blue: #57647C;
+$gradient: linear-gradient(100deg, #EE307A, #FC8B53);
+
+// breakpoints
+$breakpoint-md: 768px;
+$breakpoint-md-max-width: 720px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-max-width: 960px;
+$breakpoint-xl: 1200px;
+$breakpoint-xl-max-width: 1140px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxl-max-width: 1320px;
+$breakpoint-xxxl: 1920px;
+$breakpoint-xxxl-max-width: 1820px;
+@import "./breakpoints";
