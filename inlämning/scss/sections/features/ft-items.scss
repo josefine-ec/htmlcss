@@ -1,22 +1,5 @@
-.features {
-    border: 1px solid black;
-    grid-template-areas:
-                        "1 2"
-                        "3 4";
-
-    #pf {
-        grid-area: 1;
-    }
-
-    #sr {
-        grid-area: 2;
-    }
-
-    #ga {
-        grid-area: 3;
-    }
-
-    #ss {
-        grid-area: 4;
-    }
+.feature-items {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.4rem;
+    column-gap: 8.3rem;
 }

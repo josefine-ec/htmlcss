@@ -17,8 +17,6 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
 
     @include md { max-width: $breakpoint-md-max-width; }
     @include lg { max-width: $breakpoint-lg-max-width; }
@@ -35,6 +33,7 @@ button {
     color: $light;
     border: none;
     border-radius: 0.3rem;
+    margin-top: 2rem;
     padding: 1.5rem 2rem;
     font-size: 0.9rem;
     font-weight: 700;
@@ -55,7 +54,7 @@ a {
 }
 
 span {
-    line-height: 2;
+    line-height: 1.6;
 }
 
 // HEADINGS
@@ -65,6 +64,7 @@ h1 {
     font-size: 48px;
     font-weight: 700;
     color: $dark;
+    line-height: 1.2;
 }
 
 h2 {
