@@ -17,6 +17,7 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 5rem;
 
     @include md { max-width: $breakpoint-md-max-width; }
     @include lg { max-width: $breakpoint-lg-max-width; }
@@ -32,18 +33,21 @@ button {
     background: $gradient;
     color: $light;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 0.35rem;
     margin-top: 2rem;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2.3rem;
     font-size: 0.9rem;
     font-weight: 700;
     cursor: pointer;
+
+    &:hover { // FIXA NÅT SNYGGT
+        transition: 0.2s;
+    }
 }
 
 ul {
     list-style-type: none;
     text-decoration: none;
-    font-size: 17px;
 }
 
 a {
@@ -79,4 +83,8 @@ h3 {
     font-size: 21px;
     font-weight: 600;
     color: $dark;
+}
+
+img {
+    object-fit: contain;
 }

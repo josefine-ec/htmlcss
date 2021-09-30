@@ -1,39 +1,43 @@
-// SHOWCASE TEXT
+.showcase {
 
-header {
-    h1 {
-        font-family: $poppins;
-        color: $dark;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 1.2;
+    .showcase-text {
+        
+        
+        header {
+                h1 {
+                font-family: $poppins;
+                color: $dark;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+        
+        }
+
     }
 
-}
-
-// IMG
-
-.showcase-img {
-    position: relative;
-}
-
-#shape {
-    position: absolute;
-    right: -370px;
-    top: -100px;
-    z-index: -1;
-}
-
-#circle {
-    position: relative;
-    right: -800px;
-    top: 130px;
-//    z-index: -1;
-}
-
-#computer {
-    position: relative;
-    right: -150px;
-    top: -100px;
-    z-index: 2;
+    .showcase-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        
+        #shape {
+            position: absolute;
+            right: -370px;
+            top: -100px;
+            z-index: -1;
+        }
+        
+        #circle {
+            position: relative;
+            right: -800px;
+            top: 130px;
+        }
+        
+        #computer {
+            position: relative;
+            right: -150px;
+            top: -100px;
+        }
+    }
 }

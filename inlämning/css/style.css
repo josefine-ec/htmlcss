@@ -82,6 +82,7 @@ html, body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -116,18 +117,22 @@ button {
   background: linear-gradient(100deg, #EE307A, #FC8B53);
   color: #ffffff;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.35rem;
   margin-top: 2rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2.3rem;
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
 }
 
+button:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 ul {
   list-style-type: none;
   text-decoration: none;
-  font-size: 17px;
 }
 
 a {
@@ -163,6 +168,11 @@ h3 {
   color: #252525;
 }
 
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .top-navbar {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
@@ -170,7 +180,33 @@ h3 {
   padding: 1rem 0;
 }
 
-header h1 {
+.top-navbar .nav-links {
+  margin-left: 1.5rem;
+}
+
+.top-navbar #tryit {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #FF6803;
+  margin: 0;
+  padding: 0.6rem 1.4rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.top-navbar #tryit:hover {
+  background: #FF6803;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.top-navbar #tryit:not(:hover) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.showcase .showcase-text header h1 {
   font-family: "Poppins", sans-serif;
   color: #252525;
   font-size: 60px;
@@ -178,28 +214,29 @@ header h1 {
   line-height: 1.2;
 }
 
-.showcase-img {
+.showcase .showcase-img {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
-#shape {
+.showcase .showcase-img #shape {
   position: absolute;
   right: -370px;
   top: -100px;
   z-index: -1;
 }
 
-#circle {
+.showcase .showcase-img #circle {
   position: relative;
   right: -800px;
   top: 130px;
 }
 
-#computer {
+.showcase .showcase-img #computer {
   position: relative;
   right: -150px;
   top: -100px;
-  z-index: 2;
 }
 
 .feature-items {
@@ -208,4 +245,8 @@ header h1 {
   row-gap: 4.4rem;
   -webkit-column-gap: 8.3rem;
           column-gap: 8.3rem;
+}
+
+.pages .numbers {
+  color: #EE307A;
 }
