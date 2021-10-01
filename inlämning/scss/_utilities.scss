@@ -8,16 +8,30 @@
 .justify-content-end { justify-content: end; }
 .justify-content-center { justify-content: center; }
 .justify-content-between { justify-content: space-between; }
+.justify-content-around { justify-content: space-around; }
 
 .align-items-start { align-items: flex-start ;}
 .align-items-end { align-items: flex-end ;}
 .align-items-center { align-items: center ;}
 
+.pt-1 { padding-top: 1rem; }
+.pt-2 { padding-top: 2rem; }
+.pt-3 { padding-top: 3rem; }
+.pt-4 { padding-top: 4rem; }
+.pt-5 { padding-top: 5rem; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mt-4 { margin-top: 4rem; }
+.mt-5 { margin-top: 5rem; }
+.mt-6 { margin-top: 6rem; }
+.mt-7 { margin-top: 7rem; }
+.mt-10 { margin-top: 10rem; }
+
 .container {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5rem;
 
     @include md { max-width: $breakpoint-md-max-width; }
     @include lg { max-width: $breakpoint-lg-max-width; }
@@ -55,6 +69,10 @@ a {
     font-size: 17px;
     font-weight: 500;
     color: $dark;
+
+    &:hover {
+        color: $dark-orange;
+    }
 }
 
 span {
@@ -65,7 +83,7 @@ span {
 
 h1 {
     font-family: $poppins;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 700;
     color: $dark;
     line-height: 1.2;
@@ -73,18 +91,23 @@ h1 {
 
 h2 {
     font-family: $poppins;
+    font-size: 48px;
+    font-weight: 700;
+    color: $dark;
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: $poppins;
     font-size: 22px;
     font-weight: 700;
     color: $dark;
 }
 
-h3 {
+/* h4 {
     font-family: $poppins;
     font-size: 21px;
     font-weight: 600;
     color: $dark;
-}
+}*/
 
-img {
-    object-fit: contain;
-}

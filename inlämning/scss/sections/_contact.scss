@@ -1,0 +1,52 @@
+#contact {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 45%;
+        left: 15%;
+        z-index: -1;
+    }
+
+        .engagement {
+            .stats {
+                p {
+                    font-family: $poppins;
+                    font-size: 42px;
+                    font-weight: 600;
+                    color: $pink;
+                    margin-top: 5rem;
+                    margin-bottom: 0;
+                }
+                
+            }
+        }
+
+    .contact-box {
+        width: 65%;
+        background: $light;
+        border-radius: 0.5rem;
+        box-shadow: 2px 5px 15px 5px #E8E8E8;
+        align-self: center;
+        padding: 2rem 2rem;
+
+        .questions {
+            text-align: start;
+            
+            p {
+            font-family: $poppins;
+            font-size: 21px;
+            font-weight: 600;
+            color: $dark;
+            margin: 0;
+            }
+        }
+
+        button {
+            margin:0;
+        }
+    }
+
+}

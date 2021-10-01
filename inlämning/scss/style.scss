@@ -4,10 +4,8 @@
 @import "./root";
 @import "./utilities";
 
-@import "./sections/header/navbar";
-@import "./sections/header/showcase";
-@import "./sections/features/ft-text";
-@import "./sections/features/ft-items";
+@import "./sections/header";
+@import "./sections/features";
 @import "./sections/pages";
-
-
+@import "./sections/contact";
+@import "./sections/blog";

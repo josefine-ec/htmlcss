@@ -1,0 +1,38 @@
+#blog {
+    flex-direction: column;
+    text-align: center;
+
+    .blog-section {
+        .blog-entry {
+            box-shadow: 2px 5px 15px 5px #E8E8E8;
+            margin: 4rem 1rem;
+        }
+
+        .blog-text {
+            flex-direction: column;
+            text-align: start;
+            width: 370px;
+            padding: 1rem 2rem;
+
+            .date {
+                font-family: $poppins;
+                font-size: 14px;
+                color: $dark-orange;
+            }
+
+            .blog-title {
+                font-family: $poppins;
+                font-size: 22px;
+                font-weight: 700;
+                color: $dark;
+            }
+
+            button {
+                width: 40%;
+                font-size: 14px;
+                padding: 1rem 0;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+}

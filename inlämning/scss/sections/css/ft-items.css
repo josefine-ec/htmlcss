@@ -1,7 +1,0 @@
-.feature-items {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  row-gap: 4.4rem;
-  -webkit-column-gap: 8.3rem;
-          column-gap: 8.3rem;
-}
