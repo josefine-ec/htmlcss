@@ -1,0 +1,113 @@
+#contact {
+    @include flex-column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+    h2 {
+        font-size: 35px;
+
+        @include md {
+            width: 70%;
+        }
+        @include lg {
+            width:60%;
+            font-size: 48px; 
+        }
+    }
+
+    span {
+        @include md {
+            width: 70%;
+        }
+        @include lg {
+            width: 45%;
+        }
+    }
+
+    img {
+        display:none;
+        @include md {
+            display: block;
+            width: 80%;
+            position:absolute;
+            top:37%;
+            z-index: -1;
+        }
+        @include lg {
+            display:block;
+            position: absolute;
+            top: 45%;
+            left: 15%;
+        }
+    }
+
+        .engagement {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+            @include md {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+            .stats {
+                p {
+                    font-family: $poppins;
+                    font-size: 42px;
+                    font-weight: 600;
+                    color: $pink;
+                    margin: 0;
+
+                    @include md {
+                        margin-top: 2rem;
+                    }
+                    @include lg {
+                        margin-top: 5rem;
+                    }
+                }
+                
+            }
+        }
+
+    .contact-box {
+        //align-items: center;
+        background: $light;
+        border-radius: 0.5rem;
+        box-shadow: 2px 5px 15px 5px #E8E8E8;
+        //align-self: center;
+        padding: 2rem 2rem;
+        width:81%;
+
+        @include md {
+            width:65%;
+        }
+
+        @include lg {
+            @include flex-between-center;
+            width: 65%;
+        }
+
+        .questions {
+            margin-bottom: 1rem;
+            @include lg {
+                text-align: start;
+                margin-bottom: 0;
+            }
+            
+            p {
+            font-family: $poppins;
+            font-size: 21px;
+            font-weight: 600;
+            color: $dark;
+            margin: 0;
+            }
+        }
+
+        button {
+            margin:0;
+        }
+    }
+
+}
