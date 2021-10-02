@@ -1,15 +1,18 @@
 #blog {
+    @include flex-between-center;
     flex-direction: column;
     text-align: center;
 
     .blog-section {
+        @include flex-between-center;
+
         .blog-entry {
             box-shadow: 2px 5px 15px 5px #E8E8E8;
             margin: 4rem 1rem;
         }
 
         .blog-text {
-            flex-direction: column;
+            @include flex-column;
             text-align: start;
             width: 370px;
             padding: 1rem 2rem;

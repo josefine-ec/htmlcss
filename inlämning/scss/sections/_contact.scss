@@ -1,5 +1,5 @@
 #contact {
-    flex-direction: column;
+    @include flex-column;
     text-align: center;
     position: relative;
 
@@ -25,6 +25,7 @@
         }
 
     .contact-box {
+        @include flex-between-center;
         width: 65%;
         background: $light;
         border-radius: 0.5rem;
