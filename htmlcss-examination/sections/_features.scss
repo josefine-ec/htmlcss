@@ -1,19 +1,12 @@
 #features {
-    @include flex-column; // härifrån
+    @include flex-column;
     justify-content: center;
     align-items: center;
     margin-top: 0;
 
-    @include md {
-        //display: flex;
-        //flex-direction: column-reverse;
-    }
-
     @include lg {
         @include flex-row-between;
         align-items: start;
-        //margin-top: 11rem;
-        display: flex;
     }
 
     .ft-text {
@@ -46,9 +39,6 @@
 
     .feature-items {
         text-align: center;
-        //@include flex-column;
-        //justify-content: center;
-        //align-items: center;
         @include md {
             display: grid;
             grid-template-columns: 1fr 1fr;
