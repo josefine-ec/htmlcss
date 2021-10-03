@@ -1,0 +1,83 @@
+.d-grid { display: grid; }
+.align-items-center { align-items: center ;}
+
+.mt-3 { margin-top: 3rem; }
+.mt-4 { margin-top: 4rem; }
+
+.mt-7 { margin-top: 7rem; }
+.mt-10 { margin-top: 10rem; }
+
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include md { max-width: $breakpoint-md-max-width; }
+    @include lg { max-width: $breakpoint-lg-max-width; }
+}
+
+button {
+    background: $gradient;
+    color: $light;
+    border: none;
+    border-radius: 0.35rem;
+    margin-top: 2rem;
+    padding: 1rem 2.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px 5px 2px $blue;
+        transition: 0.3s;
+    }
+
+    &:not(:hover) {
+        transition: 0.3s;
+    }
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: $dark;
+
+    &:hover {
+        color: $dark-orange;
+    }
+}
+
+span {
+    line-height: 1.6;
+}
+
+// HEADINGS
+
+h1 {
+    font-family: $poppins;
+    font-size: 60px;
+    font-weight: 700;
+    color: $dark;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: $poppins;
+    font-size: 48px;
+    font-weight: 700;
+    color: $dark;
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: $poppins;
+    font-size: 22px;
+    font-weight: 700;
+    color: $dark;
+}

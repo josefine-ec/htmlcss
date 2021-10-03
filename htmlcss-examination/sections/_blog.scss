@@ -1,0 +1,56 @@
+#blog {
+    @include flex-between-center;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+        font-size: 35px;
+        @include lg {
+            font-size: 48px;
+        }
+    }
+
+    #blog-text {
+        @include lg {
+            width:45%;
+        }
+    }
+
+    .blog-section {
+        @include lg {
+            @include flex-between-center;
+        }
+
+        .blog-entry {
+            box-shadow: 2px 5px 15px 5px #E8E8E8;
+            margin: 4rem 1rem;
+        }
+
+        .blog-text {
+            @include flex-column;
+            text-align: start;
+            width: 370px;
+            padding: 1rem 2rem;
+
+            .date {
+                font-family: $poppins;
+                font-size: 14px;
+                color: $dark-orange;
+            }
+
+            .blog-title {
+                font-family: $poppins;
+                font-size: 22px;
+                font-weight: 700;
+                color: $dark;
+            }
+
+            button {
+                width: 40%;
+                font-size: 14px;
+                padding: 1rem 0;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+}

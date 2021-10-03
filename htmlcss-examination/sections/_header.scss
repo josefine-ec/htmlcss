@@ -1,0 +1,172 @@
+header {
+
+    
+    // TOP NAVBAR
+    #bg {
+        display: none;
+
+        @include lg {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    
+    .top-navbar {
+        grid-template-columns: 1fr 2fr;
+        @include flex-between-center;
+        margin: 0.5rem 1rem;
+        
+        @include lg {
+            border-bottom: 3px solid #E0E3EA;
+            padding: 1rem 0;
+        }
+
+        #logo {
+            width: 50%;
+            @include lg {
+                width:auto;
+            }
+        }
+
+        #menu {
+            font-size: 1rem;
+            @include md {
+                font-size: 2rem;
+            }
+            @include lg {
+                display: none;
+            }
+        }
+        
+        .nav-links {
+            display: none;
+            @include lg {
+                @include flex-between-center;
+                gap: 1.5rem;
+            }
+
+            #tryit {
+                background: none;
+                color: #000000;
+                border: 1px solid $dark-orange;
+                margin: 0;
+                padding: 0.6rem 1.4rem;
+                font-size: 17px;
+                font-weight: 500;
+                
+                &:hover {
+                    background: $dark-orange;
+                    color: $light;
+                    transition: 0.3s;
+                }
+                
+                &:not(:hover) {
+                    transition: 0.3s;
+                }
+            }
+
+        }
+        
+    }
+}
+    
+
+// SHOWCASE
+
+.showcase {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+
+    @include md {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @include lg {
+        @include flex-row-between;
+        align-items: start;
+        margin-top: 11rem;
+    }
+    .showcase-text {
+        @include flex-column;
+        align-items: center;
+        text-align: center;
+        width: 100%; 
+        
+        @include md {
+            width: 75%;
+            margin-top: 5rem;
+        }
+
+        @include lg {
+            width: 60%;
+            text-align: start;
+            align-items: start;
+            margin-top: 0;
+        }
+            h1 {
+                font-size: 40px;
+
+                @include lg {
+                    font-size: 60px; 
+                }
+            }
+    }
+
+    .showcase-img {
+        display: none;
+        @include md {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        @include lg {
+            margin-left: -190px;
+        }
+
+            #shape {
+                width:100%;
+                position: absolute;
+                top:-60px;
+                left:30px;
+                z-index: -1;
+                @include lg {
+                    width: auto;
+                    left: 260px;
+                    top: -300px;
+                }
+            }
+            
+            #circle {
+                width: 25%;
+                position: relative;
+                left: 420px;
+                top: 100px;
+                @include lg {
+                    width:auto;
+                    left: 885px;
+                    top: -70px;
+                }
+            }
+            
+            #computer {
+                width: 75%;
+                position: relative;
+                left: 50px;
+                top: -65px;
+                @include lg {
+                    width:auto;
+                    left: 240px;
+                    top: -300px;
+                }
+            }
+        
+    }
+}
